@@ -5,10 +5,12 @@ import (
 	"path/filepath"
 	"time"
 	"ningko.net/snippetbox/pkg/models"
+	"ningko.net/snippetbox/pkg/forms"
 )
 
 type templateData struct {
 	CurrentYear int
+	Form *forms.Form
 	Snippet *models.Snippet
 	Snippets []*models.Snippet
 }
